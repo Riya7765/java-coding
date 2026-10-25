@@ -1,0 +1,21 @@
+import java.awt.*;
+import java.awt.event.*;
+
+class AWTFrameDemo {
+    public static void main(String[] args) {
+        Frame frame = new Frame("AWT Example");
+
+        Label label = new Label("Welcome to Java GUI");
+        label.setAlignment(Label.CENTER);
+
+        frame.add(label);
+        frame.setSize(400, 200);
+        frame.setVisible(true);
+
+        frame.addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e) {
+                frame.dispose();
+            }
+        });
+    }
+}

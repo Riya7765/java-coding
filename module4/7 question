@@ -1,0 +1,11 @@
+class HashCodeDemo {
+    public static void main(String[] args) {
+        String s1 = "Java";
+        String s2 = "Python";
+        String s3 = "C++";
+
+        System.out.println("HashCode of Java: " + s1.hashCode());
+        System.out.println("HashCode of Python: " + s2.hashCode());
+        System.out.println("HashCode of C++: " + s3.hashCode());
+    }
+}
